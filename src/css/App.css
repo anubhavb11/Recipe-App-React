@@ -1,0 +1,14 @@
+@import-normalize;
+@import 'recipe-list.css';
+@import'button.css';
+*,*::before,*::after{
+    font-family: Goutham Rounded,sans-serif;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 25px;
+}
