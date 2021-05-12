@@ -1,0 +1,24 @@
+.header{
+    display: flex;
+}
+
+.heading__buttons{
+    margin-left: 2rem;
+    margin-top: .4rem;
+}
+
+.recipe__detail{
+    padding: 0.3rem 0 ;
+    font-size: 20px;
+    font-weight: 300;
+}
+.recipe__detail__title{
+    font-weight: 500;
+}
+
+.recipe {
+    border-bottom: 2px solid black;
+}
+.recipe:last-child{
+    border-bottom: none;
+}

@@ -2,7 +2,7 @@
     background: none;
     border: none;
     outline: none;
-    font-weight: bold;
+    font-weight: 500;
 
     font-size: inherit;
 
@@ -19,3 +19,12 @@ background-color: hsl(200, 100%, 50%);
     background-color: hsl(200, 100%, 35%);
 
 }
+
+.btn-red{
+    color: white;
+    background-color: hsl(355, 100%, 50%);
+    }
+    .btn-red:hover{
+        background-color: hsl(355, 100%, 35%);
+    
+    }

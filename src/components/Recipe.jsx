@@ -1,38 +1,48 @@
-import React from 'react';
+import React , {useContext} from 'react';
 import IngredientsList from './ingredientsList';
+import {RecipeContext} from './App'
 const Recipe = (props) => {
+
+    const {handleRecipeDelete} = useContext(RecipeContext);
+
     const {
+        id,
         name,
         servings,
         cookTime,
         instructions,
-        ingredients
+        ingredients,
+        
     }=props
     return (
-        <div>
+        <div className='recipe'>
             <div className="header">
-                <h3>{name}</h3>
                 <div className="heading">
-                    <button>Edit</button>
-                    <button>Delete</button>
+                <h3>{name}</h3>
+                </div>
+               
+                <div className="heading__buttons">
+                    <button className='btn btn-primary btn-blue' >Edit</button>
+                    <br/>
+                    <button onClick={() => handleRecipeDelete(id)} className='btn btn-red'>Delete</button>
                 </div>
             </div>
-            <div className="1-row">
-                <span>Serving:</span>
-                <span>{servings}</span>
+            <div className="recipe__detail recipe__serving">
+                <span className='recipe__detail__title'>Serving:</span>
+                <span> {servings}</span> 
             </div>
-            <div className="1-row">
-                <span>Cook Time:</span>
-                <span>{cookTime}</span>
+            <div className="recipe__detail recipe__">
+                <span className='recipe__detail__title'>Cook Time:</span>
+                <span> {cookTime}</span>
             </div>
-            <div className="1-row">
-                <span>Instructions:</span>
+            <div className="recipe__detail recipe__">
+                <span className='recipe__detail__title'>Instructions:</span>
                 <div className="instruct">
                     {instructions}
                 </div>
             </div>
-            <div className="1-row">
-                <span>Ingredients:</span>
+            <div className="recipe__detail recipe__">
+                <span className='recipe__detail__title'> Ingredients:</span>
                 <div className="instruct">
                     <IngredientsList ingredients =  {ingredients}/>
                    
