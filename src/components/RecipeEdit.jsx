@@ -1,6 +1,7 @@
 import React from 'react';
 import RecipeIngrident from './RecipeIngrident'
-const RecipeEdit = () => {
+const RecipeEdit = ({recipe}) => {
+    console.log(recipe);
     return (
         <div className="recipe_edit">
             <div className="recipe_edit_removeButton_container">
@@ -10,17 +11,26 @@ const RecipeEdit = () => {
             </div>
             <div className="recipe_edit_details_grid">
                 <label className='recipe_edit_label' htmlFor="name">Name</label>
-                <input className='recipe_edit_input' type="text" name='name' id='name' />
+                <input className='recipe_edit_input' 
+                 type="text" name='name' id='name'
+                 value={recipe.name} />
 
-                <label className='recipe_edit_label' htmlFor="cookTime">cookTime</label>
-                <input className='recipe_edit_input' type="text" name='cookTime' id='cookTime' />
+                <label className='recipe_edit_label' htmlFor="cookTime">CookTime</label>
+                <input className='recipe_edit_input'
+                 type="text" name='cookTime' id='cookTime'
+                 value={recipe.cookTime} />
 
 
                 <label className='recipe_edit_label' htmlFor="Serving">Serving</label>
-                <input className='recipe_edit_input' type="number" name='Serving' id='Serving' />
+                <input className='recipe_edit_input'
+                 type="number" name='Serving' id='Serving' 
+                 value={recipe.servings}/>
 
                 <label className='recipe_edit_label' htmlFor="instructions">Instructions</label>
-                <textarea className='recipe_edit_input'  name="instructions" id="instructions" cols="30" rows="10"></textarea>
+                <textarea className='recipe_edit_input'  
+                name="instructions" id="instructions" cols="30" rows="10"
+                value = {recipe.instructions}
+                ></textarea>
             </div>
             <br/>
             <label className='recipe_edit_label'> Ingredients </label>
@@ -29,8 +39,7 @@ const RecipeEdit = () => {
                 <div>Amount</div>
                 <div></div>
                 {/* Ingridents componnets */}
-                <RecipeIngrident/>
-                <RecipeIngrident/>
+                {recipe.ingredients.map( (ingredient) => <RecipeIngrident ingredient={ingredient}/>  )}
 
             </div>
 

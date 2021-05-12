@@ -1,10 +1,12 @@
 import React from 'react';
 
-const RecipeIngrident = () => {
+const RecipeIngrident = ({ingredient}) => {
+    console.log(ingredient);
     return (
+
         <>
-            <input  type="text" />
-            <input type="text" />
+            <input value={ingredient.name} type="text" />
+            <input value={ingredient.amount} type="text" />
             <button className='btn-red'>&times;</button>
         </>
     );

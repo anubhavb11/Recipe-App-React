@@ -1,70 +1,114 @@
-# Getting Started with Create React App
+# heading
+## heading 2
+### heading 3
+#### heading 4
+##### heading 5
+###### heading 6
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- Italics -->
+*this is italic* 
+<!-- strong -->
+**strong**
+<!-- strkie through -->
+~~strkie through~~
 
-## Available Scripts
 
-In the project directory, you can run:
+<!-- horizontal rule -->
 
-### `npm start`
+---
+___
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<!-- Blockquote -->
+> this quaote
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<!-- links -->
+<!-- anbhav is hover effect -->
+[travers](www.google.com "anubhav")
 
-### `npm run build`
+<!-- UL -->
+* Item1
+* item2
+* item3
+  * Nessted 1
+  * nested 2
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<!-- ol -->
+1. dsa
+2. das
+3. fse
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<!-- inline code block -->
+`<p> hello</p>`
 
-### `npm run eject`
+<!-- Images -->
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![Markdown logo](link)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<!-- GITHUB MARKDOWN -->
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<!-- CODE BLOCK -->
 
-## Learn More
+```C++
+npm install
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+npm start
+```
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```C++
+int k;
+for(int i=0;i<n;i++>){
+    fmdslmf
+}
+```
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+*We're looking for the first 2-3 paragraphs of the article that appropriately summarize what your article will be about.*
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Proposed title of the article
+#### Hashing in Data Structure
 
-### `npm run build` fails to minify
+## Introduction paragraph (2-3 paragraphs):
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+In hashing the idea is to use a hash function that converts a given key to a smaller number and uses the smaller number as an index in a table called a hash table.
+
+**Hashing is used in a data structure known as a hash table** to make searching and insertion faster. It is generally the best data structure used to decrease time complexity in your code.
+
+We will learn about hash tables, their operations ( insert, delete, search), hash collisions, and rehashing 
+
+
+**Hash Table** : In data structures, we use a hash table to store key-value pairs. It is used when the searching, insertion of an element is required to be fast. There are various operations in a hash table like insertion, deletion, searching.
+
+
+
+### Key takeaways: 
+
+
+
+1. Learn about hashing and hash table
+2. Learn about Collision handling techniques.
+3. Implementation of hash table data structures in C++
+
+
+
+### References: 
+
+N/A
+
+### Templates to use as guides
+- [How To Guide Template](https://github.com/section-engineering-education/engineering-education/blob/master/new_contributors/how-to-guide-template.md)
+- [Software Review Template](https://github.com/section-engineering-education/engineering-education/blob/master/new_contributors/software-review-template.md)
+- [Tutorial Template](https://github.com/section-engineering-education/engineering-education/blob/master/new_contributors/tutorial-template.md)
+
+
+
