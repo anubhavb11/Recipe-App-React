@@ -11,7 +11,7 @@ function App() {
     const [selectRecipeId, setSelectRecipeId] = useState();
   const [recipes, setRecipes] = useState(sampleRecipes);
   const selectedRecipe = recipes.find(recipe => recipe.id === selectRecipeId);
-console.log(selectedRecipe);
+
 
 
   useEffect(() =>{
@@ -31,7 +31,8 @@ console.log(selectedRecipe);
   const recipeContextValue = {
     handleRecipeAdd,
     handleRecipeDelete,
-    handleRecipeSelect
+    handleRecipeSelect,
+    handelRecipeChange
   }
 
 
@@ -39,23 +40,30 @@ console.log(selectedRecipe);
     setSelectRecipeId(id);
   }
 
+  function handelRecipeChange(id,recipe){
+    const newRecipes = [...recipes];
+    const index = newRecipes.findIndex(r => r.id === id)
+    newRecipes[index]=recipe
+    setRecipes(newRecipes);
+  }
 
   function handleRecipeAdd(){
 
     const newRecipe = {
       id: uuid(),
-      name: 'New',
-      servings: 1,
-      cookTime: '1:00',
-      instructions: 'Instruct.',
+      name: ' ',
+      servings: null,
+      cookTime: ' ',
+      instructions: ' ',
       ingredients: [
         {
           id: uuid(),
-          name: 'Name',
-          amount : '1 Tbs'
+          name: ' ',
+          amount : ' '
         }
       ]
     };
+    handleRecipeSelect(newRecipe.id);
 
   setRecipes([...recipes,newRecipe]);
 }
